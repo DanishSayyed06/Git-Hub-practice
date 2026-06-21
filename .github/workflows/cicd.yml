@@ -1,4 +1,4 @@
-    name: CICD
+ name: CICD
 
     on: 
       workflow_dispatch:
@@ -14,14 +14,14 @@
             - name: Build using Doker
               run: echo "Building using Docker"
           
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Runnig test cases
-          run: echo "Testing the app"
-      
-    deploy:
-      runs-on:
-      steps:
-        - name: Deploying on the machine
-          run: echo "Deploying the code"
+        test:
+          runs-on: ubuntu-latest
+          steps:
+            - name: Runnig test cases
+              run: echo "Testing the app"
+          
+        deploy:
+          runs-on:
+          steps:
+            - name: Deploying on the machine
+              run: echo "Deploying the code"
